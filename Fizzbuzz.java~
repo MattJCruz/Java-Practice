@@ -6,9 +6,10 @@ public class Fizzbuzz
   {
     try
     {
-      FileWriter fw=new FileWriter("C:\\\\Users\\matth\\OneDrive\\Programming OneDrive\\Java-Practice\\Fizzbuzz.txt");
+      FileWriter fw=new FileWriter("D:\\Fizzbuzz.txt");
       for(int x = 1; x <= 100; x++)
       {
+        
         if( x % 5 == 0)
         {
           fw.write("fizz");

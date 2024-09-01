@@ -1,21 +1,27 @@
-public class Fizzbuzz
+import java.io.FileWriter; 
+public class FizzbuzzNew
 {
     public static void main(String[]args)
     {
+       try
+    {
+      FileWriter fw = new FileWriter("C:\\Users\\matth\\OneDrive\\Programming OneDrive\\Java-Practice\\Fizzbuzz.txt");
         int i = 1;
         while(i<=100)
         {
-            System.out.print(i);
+            fw.write(i);
             if(i%5==0)
             {
-                System.out.print("fizz");
+                fw.write("fizz");
             }
             if(i%7==0)
             {
-                System.out.print("buzz");
+                fw.write("buzz");
             }
-            System.out.println(" ");
+            fw.write("/n");
             i++;
         }
     }
+       catch(Exception e){System.out.println(e);} 
+}
 }
