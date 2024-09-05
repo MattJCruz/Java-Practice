@@ -1,0 +1,6 @@
+I'm going back to basics, tackling the age-old Fizzbuzz algorithm.
+To be honest I'm not sure *how* old it is but i know it's a basic problem to solve.
+I should probably be tackling more basic algorithms, like sorting ones, instead, but oh well.
+I've determined I want to take advantage of some of Java's libraries so I'm using the FileWriter class
+to print the output of the program to a text file.
+Unfortunately... I've run into a problem that I'm intent on solving more on principle than for any practical purpose.

@@ -1,7 +1,6 @@
 import java.io.FileWriter; 
 public class Fizzbuzz
 {
-  
   public static void main(String args[])
   {
     try
