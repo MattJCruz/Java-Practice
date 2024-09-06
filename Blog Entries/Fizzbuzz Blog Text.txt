@@ -4,3 +4,8 @@ I should probably be tackling more basic algorithms, like sorting ones, instead,
 I've determined I want to take advantage of some of Java's libraries so I'm using the FileWriter class
 to print the output of the program to a text file.
 Unfortunately... I've run into a problem that I'm intent on solving more on principle than for any practical purpose.
+
+My take on Fizzbuzz prints out a number and its corresponding Fizz and Buzz right after. 
+The problem arises when i try to print out the number.
+
+This problem, in which brackets and strange characters are printed

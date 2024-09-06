@@ -1,0 +1,100 @@
+1
+2
+3
+4
+5 Fizz
+6
+7 Buzz
+8
+9
+10 Fizz
+11
+12
+13
+14 Buzz
+15 Fizz
+16
+17
+18
+19
+20 Fizz
+21 Buzz
+22
+23
+24
+25 Fizz
+26
+27
+28 Buzz
+29
+30 Fizz
+31
+32
+33
+34
+35 Fizzbuzz
+36
+37
+38
+39
+40 Fizz
+41
+42 Buzz
+43
+44
+45 Fizz
+46
+47
+48
+49 Buzz
+50 Fizz
+51
+52
+53
+54
+55 Fizz
+56 Buzz
+57
+58
+59
+60 Fizz
+61
+62
+63 Buzz
+64
+65 Fizz
+66
+67
+68
+69
+70 Fizzbuzz
+71
+72
+73
+74
+75 Fizz
+76
+77 Buzz
+78
+79
+80 Fizz
+81
+82
+83
+84 Buzz
+85 Fizz
+86
+87
+88
+89
+90 Fizz
+91 Buzz
+92
+93
+94
+95 Fizz
+96
+97
+98 Buzz
+99
+100 Fizz

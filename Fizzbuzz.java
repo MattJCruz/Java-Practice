@@ -6,8 +6,8 @@ public class Fizzbuzz {
             FileWriter fw = new FileWriter("C:\\\\Users\\matth\\OneDrive\\Programming OneDrive\\Java-Practice\\Fizzbuzz.txt");
             for (int x = 1; x <= 100; x++) {
                 if (x % 5 == 0) {
-                    fw.write("fizz");
-                    System.out.println("fizz");
+                    fw.write(x + " Fizz");
+                    System.out.println(x + " Fizz");
                     if (x % 7 == 0) {
                         fw.write("buzz\n");
                         System.out.println("buzz\n");
@@ -16,8 +16,8 @@ public class Fizzbuzz {
                         System.out.println("\n");
                     }
                 } else if (x % 7 == 0) {
-                    fw.write("Buzz\n");
-                    System.out.println("Buzz\n");
+                    fw.write(x + " Buzz\n");
+                    System.out.println(x + " Buzz\n");
                 } else {
                     fw.write(x + "\n");
                     System.out.println("\n");
