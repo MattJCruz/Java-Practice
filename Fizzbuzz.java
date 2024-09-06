@@ -7,13 +7,13 @@ public class Fizzbuzz {
             for (int x = 1; x <= 100; x++) {
                 if (x % 5 == 0) {
                     fw.write(x + " Fizz");
-                    System.out.println(x + " Fizz");
+                    System.out.print(x + " Fizz");
                     if (x % 7 == 0) {
                         fw.write("buzz\n");
                         System.out.println("buzz\n");
                     } else {
-                        fw.write("\n");
-                        System.out.println("\n");
+                        fw.write(x + "\n");
+                        System.out.println(x);
                     }
                 } else if (x % 7 == 0) {
                     fw.write(x + " Buzz\n");
