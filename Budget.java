@@ -2,12 +2,29 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 
-public class Budget {
-	static double hours;
-	static double grossIncome;
-	static double taxedIncome;
-	static double netIncome;
+/*
+	There are at least two forms this program can take, and from here on I'll focus on the first one:
+	A sequential command line program that takes in text input as per usual. It gathers the required data,
+	performs calculations, and outputs desired results.
+	I want to add a responsive GUI that does on-the-fly calculations that recalculate as data is changed
+	or otherwise newly entered.
+	Gather data; pay rate x hours worked/weekly salary, tax rate.
+	Calculate
 
+	A budget at its core is made of two categories: Income and Outgo (or perhaps more conventionally, "Expenses".)
+
+	My first instinct is to make objects out of these two and give them states (variables) related to amounts
+	made and spent, and multipliers
+
+ */
+
+public class Budget {
+	static double hoursWorked;
+	static double grossIncome;
+	static double taxedIncome(double calcTaxRate, double calcIncome){
+		return calcIncome-(calcTaxRate*calcIncome);
+	}
+	static double netIncome;
 	static double tax;
 	static double rent;
 	static double utilities;
@@ -34,20 +51,19 @@ public class Budget {
 		Scanner kb = new Scanner(System.in);
 
 		do {
-//Data Collection
+			//Data Collection
 			//System.out.print("Enter hourly payrate: ");
 			//payRate = kb.nextDouble();
 			System.out.println("Enter hours worked: ");
-			hours = kb.nextDouble();
+			hoursWorked = kb.nextDouble();
 			//System.out.print("Enter a rent price:");
 			//rent = kb.nextDouble();
-
-//Calculate hours worked. If hours worked is over 40, then subtract 40 from hours worked snd multiply it by time&1/2.
-			grossIncome += payRate * hours;
-			if (hours > 40) {
-				grossIncome = ((hours - 40) * (payRate * 1.5) + (payRate * 40));
+			//Calculate hours worked. If hours worked is over 40, then subtract 40 from hours worked snd multiply it by time&1/2.
+			grossIncome += payRate * hoursWorked;
+			if (hoursWorked > 40) {
+				grossIncome = ((hoursWorked - 40) * (payRate * 1.5) + (payRate * 40));
 			} else {
-				grossIncome = payRate * hours;
+				grossIncome = payRate * hoursWorked;
 			}
 			tax = grossIncome * taxRate;
 
@@ -61,7 +77,5 @@ public class Budget {
 			System.out.printf("%,.2f\n", (grossIncome - tax) * 52);
 			System.out.println("Enter a new income if you'd like. Otherwise, exit with \"o\".");
 		} while (payRate > 0);
-
-		String randomTex = "YOu guys can leave, now.";4
 	}
 }
